@@ -6,8 +6,8 @@
  All missing keys will be filled with a corresponding value from common_data
 """
 merged_dbs = [
-  {'dbtest': 'db1'},
-  # {'db': 'db2'},
+  {'db': 'bd20211121175850', 'host': 'localhost', 'user': 'root'},
+  {'db': 'bd20211121175904', 'host': 'localhost', 'user': 'root'},
   # {'db': 'db2', 'host': 'yourhost.com', 'user': 'user'},
   # ...
 ]
@@ -17,16 +17,16 @@ merged_dbs = [
   This script assumes that all tables are already created.
 """
 destination_db = {
-  'db': 'db_new'
-  'host': 'yourhost.com',
-  'user': 'user',
+  'db': 'sped_merged',
+  'host': 'localhost',
+  'user': 'root',
 }
 
 """
   Information schema data - needed to map indexes, foreign keys etc
 """
 information_schema = {
-  'db': 'information_schema'
+  'db': 'sped_merged'
 }
 
 """
