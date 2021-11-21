@@ -6,7 +6,7 @@
  All missing keys will be filled with a corresponding value from common_data
 """
 merged_dbs = [
-  {'db': 'db1'},
+  {'dbtest': 'db1'},
   # {'db': 'db2'},
   # {'db': 'db2', 'host': 'yourhost.com', 'user': 'user'},
   # ...
