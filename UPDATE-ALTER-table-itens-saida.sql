@@ -10,3 +10,5 @@ UPDATE bd_auditoria.itenssaida INNER JOIN bd_auditoria.mvtosaida062021
 SET itenssaida.QTDnfe062021 = mvtosaida062021.qtd;
 
 SELECT * FROM bd_auditoria.itenssaida;
+
+-- Teste
