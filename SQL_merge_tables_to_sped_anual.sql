@@ -22,4 +22,4 @@ INSERT INTO bd_auditoria.reg_k200 SELECT * FROM bd20211223184714.reg_k200;
 
 INSERT INTO bd_auditoria.reg_h010 SELECT * FROM bd20220119184911.reg_h010;
 
-select * from bd_auditoria.reg_k200 where DT_DOC is null1
+select * from bd_auditoria.reg_k200 where DT_DOC is null
