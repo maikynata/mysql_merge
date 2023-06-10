@@ -1,55 +1,65 @@
 -- Estoque inicial: bloco h010 só tem no mês 02
-SELECT bd_auditoria.reg_h010.COD_ITEM, bd_auditoria.reg_h010.QTD FROM bd_auditoria.reg_h010;
+SELECT bd_auditoria_2022.reg_h010.COD_ITEM, bd_auditoria_2022.reg_h010.QTD FROM bd_auditoria_2022.reg_h010;
 
 -- Entrada
-SELECT bd_auditoria.mvtoEntrada.COD_ITEM, bd_auditoria.mvtoEntrada.totalQTDEntrada from mvtoEntrada;
+SELECT bd_auditoria_2022.mvtoEntrada.COD_ITEM, bd_auditoria_2022.mvtoEntrada.totalQTDEntrada from mvtoEntrada;
 
 -- Saida
-SELECT bd_auditoria.itenssaida.COD_ITEM, bd_auditoria.itenssaida.TotalQTDnfe FROM bd_auditoria.itenssaida;
+UPDATE bd_auditoria_2022.itenssaida
+SET TotalQTDnfe = (QTDnfe012022 + QTDnfe022022 + QTDnfe032022 + QTDnfe042022 + QTDnfe052022 + QTDnfe062022 + QTDnfe072022 + QTDnfe082022 + QTDnfe092022
++ QTDnfe102022 + QTDnfe112022 + QTDnfe122022);
 
-INSERT into auditoria (COD_ITEM) SELECT COD_ITEM from bd_auditoria.itenssaida;
+SELECT bd_auditoria_2022.itenssaida.COD_ITEM, bd_auditoria_2022.itenssaida.TotalQTDnfe FROM bd_auditoria_2022.itenssaida;
+SELECT * FROM bd_auditoria_2022.itenssaida;
+
+-- Tabela de auditoria
+INSERT into auditoria (COD_ITEM) SELECT COD_ITEM from bd_auditoria_2022.itenssaida;
 
 
 SELECT * from auditoria 
-where COD_ITEM='101567';
+where COD_ITEM='781651';
 
-ALTER TABLE bd_auditoria.auditoria
+ALTER TABLE bd_auditoria_2022.auditoria
 ADD COLUMN TotalQTDmvtoXML_Entrada DECIMAL(15.3);
 
 
 -- UPDATE from tabelas to auditoria
-UPDATE bd_auditoria.auditoria INNER JOIN bd_auditoria.reg_h010
-    ON bd_auditoria.auditoria.COD_ITEM = bd_auditoria.reg_h010.COD_ITEM
-SET bd_auditoria.auditoria.reg_h010_QTD = bd_auditoria.reg_h010.QTD;
+UPDATE bd_auditoria_2022.auditoria INNER JOIN bd_auditoria_2022.reg_h010
+    ON bd_auditoria_2022.auditoria.COD_ITEM = bd_auditoria_2022.reg_h010.COD_ITEM
+SET bd_auditoria_2022.auditoria.reg_h010_QTD = bd_auditoria_2022.reg_h010.QTD;
 
-UPDATE bd_auditoria.auditoria INNER JOIN mvtoEntrada
-    ON bd_auditoria.auditoria.COD_ITEM = bd_auditoria.mvtoEntrada.COD_ITEM
-SET bd_auditoria.auditoria.totalQTDEntrada = bd_auditoria.mvtoEntrada.totalQTDEntrada;
+UPDATE bd_auditoria_2022.auditoria INNER JOIN mvtoEntrada
+    ON bd_auditoria_2022.auditoria.COD_ITEM = bd_auditoria_2022.mvtoEntrada.COD_ITEM
+SET bd_auditoria_2022.auditoria.totalQTDEntrada = bd_auditoria_2022.mvtoEntrada.totalQTDEntrada;
 
-UPDATE bd_auditoria.auditoria INNER JOIN bd_auditoria.itenssaida
-    ON bd_auditoria.auditoria.COD_ITEM = bd_auditoria.itenssaida.COD_ITEM
-SET bd_auditoria.auditoria.TotalQTDnfeSaida = bd_auditoria.itenssaida.TotalQTDnfe;
+UPDATE bd_auditoria_2022.auditoria INNER JOIN bd_auditoria_2022.itenssaida
+    ON bd_auditoria_2022.auditoria.COD_ITEM = bd_auditoria_2022.itenssaida.COD_ITEM
+SET bd_auditoria_2022.auditoria.TotalQTDnfeSaida = bd_auditoria_2022.itenssaida.TotalQTDnfe;
 
-UPDATE bd_auditoria.auditoria INNER JOIN bd_auditoria.mvtoXML_EntradaTotal
-    ON bd_auditoria.auditoria.COD_ITEM = bd_auditoria.mvtoXML_EntradaTotal.nfeProc_NFe_infNFe_det_prod_cProd
-SET bd_auditoria.auditoria.TotalQTDmvtoXML_Entrada = bd_auditoria.mvtoXML_EntradaTotal.totalQTD;
+UPDATE bd_auditoria_2022.auditoria INNER JOIN bd_auditoria_2022.mvtoXML_EntradaTotal
+    ON bd_auditoria_2022.auditoria.COD_ITEM = bd_auditoria_2022.mvtoXML_EntradaTotal.nfeProc_NFe_infNFe_det_prod_cProd
+SET bd_auditoria_2022.auditoria.TotalQTDmvtoXML_Entrada = bd_auditoria_2022.mvtoXML_EntradaTotal.totalQTD;
 
 
 -- Update total itens e estoquefinal
 SELECT * from auditoria
 where COD_ITEM=729221;
 
-UPDATE bd_auditoria.auditoria
+UPDATE bd_auditoria_2022.auditoria
+SET totalQTDEntrada = 0
+where totalQTDEntrada is NULL;
+
+UPDATE bd_auditoria_2022.auditoria
+SET reg_h010_QTD = 0
+where reg_h010_QTD is NULL;
+
+UPDATE bd_auditoria_2022.auditoria
 SET TotalQTDmvtoXML_Entrada = 0
 where TotalQTDmvtoXML_Entrada is NULL;
 
-UPDATE bd_auditoria.itenssaida
-SET TotalQTDnfe = (QTDnfe012021 + QTDnfe022021 + QTDnfe032021 + QTDnfe042021 + QTDnfe052021 + QTDnfe062021 + QTDnfe072021 + QTDnfe082021 + QTDnfe092021
-+ QTDnfe102021 + QTDnfe112021 + QTDnfe122021);
+SELECT * FROM bd_auditoria_2022.itenssaida;
 
-SELECT * FROM bd_auditoria.itenssaida;
-
-UPDATE bd_auditoria.auditoria
+UPDATE bd_auditoria_2022.auditoria
 SET EstoqueFinal = ((reg_h010_QTD+totalQTDEntrada+TotalQTDmvtoXML_Entrada)-TotalQTDnfeSaida);
 
 
