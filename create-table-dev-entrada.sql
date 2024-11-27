@@ -1,20 +1,21 @@
 -- CREATE TABLE MVTO DEV ENTRADA
 
-CREATE TABLE mvtoXML_Entrada as (SELECT nfeProc_NFe_infNFe_det_prod_cProd, SUM(nfeProc_NFe_infNFe_det_prod_qCom) as qtd 
+CREATE TABLE mvtoXML_dev_Entrada as (SELECT nfeProc_NFe_infNFe_det_prod_cProd, SUM(nfeProc_NFe_infNFe_det_prod_qCom) as qtd 
 FROM bd_auditoria_2023.nfe012023
 where nfeProc_NFe_infNFe_det_prod_CFOP in (1949,1926,1202,2202) group by nfeProc_NFe_infNFe_det_prod_cProd);
 
-INSERT INTO mvtoXML_Entrada SELECT nfeProc_NFe_infNFe_det_prod_cProd, SUM(nfeProc_NFe_infNFe_det_prod_qCom) as qtd 
+-- ISERT os demais meses
+INSERT INTO mvtoXML_dev_Entrada SELECT nfeProc_NFe_infNFe_det_prod_cProd, SUM(nfeProc_NFe_infNFe_det_prod_qCom) as qtd 
 FROM bd_auditoria_2023.nfe122023
 where nfeProc_NFe_infNFe_det_prod_CFOP in (1949,1926,1202,2202) group by nfeProc_NFe_infNFe_det_prod_cProd;
 
-CREATE TABLE mvtoXML_EntradaTotal as SELECT nfeProc_NFe_infNFe_det_prod_cProd, SUM(qtd) as totalQTD FROM mvtoXML_Entrada group by nfeProc_NFe_infNFe_det_prod_cProd;
+CREATE TABLE mvtoXML_dev_EntradaTotal as SELECT nfeProc_NFe_infNFe_det_prod_cProd, SUM(qtd) as totalQTD FROM mvtoXML_dev_Entrada group by nfeProc_NFe_infNFe_det_prod_cProd;
 
-SELECT * FROM mvtoXML_Entrada;
-SELECT * FROM mvtoXML_EntradaTotal;
+SELECT * FROM mvtoXML_dev_Entrada;
+SELECT * FROM mvtoXML_dev_EntradaTotal;
 
 
-SELECT nfeProc_NFe_infNFe_det_prod_cProd FROM mvtoXML_Entrada
+SELECT nfeProc_NFe_infNFe_det_prod_cProd FROM mvtoXML_dev_Entrada
 where nfeProc_NFe_infNFe_det_prod_cProd not in (SELECT COD_ITEM FROM bd_auditoria_2022.itenssaida);
 
 -- SELECT * FROM bd_auditoria_2022.nfe122021 limit 10;

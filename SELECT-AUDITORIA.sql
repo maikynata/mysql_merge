@@ -39,13 +39,13 @@ UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.itenssaida
     ON bd_auditoria_2023.auditoria.COD_ITEM = bd_auditoria_2023.itenssaida.COD_ITEM
 SET bd_auditoria_2023.auditoria.TotalQTDnfeSaida = bd_auditoria_2023.itenssaida.TotalQTDnfe;
 
-UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.mvtoXML_EntradaTotal
-    ON bd_auditoria_2023.auditoria.COD_ITEM = bd_auditoria_2023.mvtoXML_EntradaTotal.nfeProc_NFe_infNFe_det_prod_cProd
-SET bd_auditoria_2023.auditoria.TotalQTDmvtoXML_Entrada = bd_auditoria_2023.mvtoXML_EntradaTotal.totalQTD;
+UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.mvtoXML_dev_EntradaTotal
+    ON bd_auditoria_2023.auditoria.COD_ITEM = bd_auditoria_2023.mvtoXML_dev_EntradaTotal.nfeProc_NFe_infNFe_det_prod_cProd
+SET bd_auditoria_2023.auditoria.TotalQTDmvtoXML_Entrada = bd_auditoria_2023.mvtoXML_dev_EntradaTotal.totalQTD;
 
-UPDATE bd_auditoria_2023.auditoria INNER JOIN bd20231228171529.reg_h010
-    ON bd_auditoria_2023.auditoria.COD_ITEM=bd20231228171529.reg_h010.COD_ITEM
-SET bd_auditoria_2023.auditoria.Custo_Fiscal2 = bd20231228171529.reg_h010.VL_ITEM_IR;
+UPDATE bd_auditoria_2023.auditoria INNER JOIN sped022023.reg_h010
+    ON bd_auditoria_2023.auditoria.COD_ITEM=sped022023.reg_h010.COD_ITEM
+SET bd_auditoria_2023.auditoria.Custo_Fiscal2 = sped022023.reg_h010.VL_ITEM_IR;
 
 UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.VL_Zerados_mvtoEntrada
     ON bd_auditoria_2023.auditoria.COD_ITEM=bd_auditoria_2023.VL_Zerados_mvtoEntrada.COD_ITEM
@@ -79,5 +79,5 @@ INNER JOIN bd20230506140610.reg_h010
 ON bd_auditoria_2023.auditoria.COD_ITEM=bd20230506140610.reg_h010.COD_ITEM;
 
 SELECT * from auditoria 
-where EstoqueFinal>0 and Custo_Fiscal2 IS NULL;
+where EstoqueFinal<>0 and Custo_Fiscal2 IS NULL;
 
