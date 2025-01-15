@@ -4,7 +4,7 @@ CREATE TABLE mvtoXML_dev_Entrada as (SELECT nfeProc_NFe_infNFe_det_prod_cProd, S
 FROM bd_auditoria_2023.nfe012023
 where nfeProc_NFe_infNFe_det_prod_CFOP in (1949,1926,1202,2202) group by nfeProc_NFe_infNFe_det_prod_cProd);
 
--- ISERT os demais meses
+-- INSERT os demais meses
 INSERT INTO mvtoXML_dev_Entrada SELECT nfeProc_NFe_infNFe_det_prod_cProd, SUM(nfeProc_NFe_infNFe_det_prod_qCom) as qtd 
 FROM bd_auditoria_2023.nfe122023
 where nfeProc_NFe_infNFe_det_prod_CFOP in (1949,1926,1202,2202) group by nfeProc_NFe_infNFe_det_prod_cProd;

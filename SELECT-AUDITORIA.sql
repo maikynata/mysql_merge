@@ -69,7 +69,7 @@ where TotalQTDmvtoXML_Entrada is NULL;
 SELECT * FROM bd_auditoria_2023.itenssaida;
 
 SELECT * from auditoria
-where COD_ITEM=266680;
+where COD_ITEM=352659;
 
 UPDATE bd_auditoria_2023.auditoria
 SET EstoqueFinal = ((reg_h010_QTD+totalQTDEntrada+TotalQTDmvtoXML_Entrada)-TotalQTDnfeSaida);
