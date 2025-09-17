@@ -14,7 +14,7 @@ group by nfeProc_NFe_infNFe_det_prod_cProd);
 
 SELECT * FROM mvtoSAIDA122023;
 
-SELECT nfeProc_NFe_infNFe_det_prod_cProd FROM mvtoSAIDA092021
+SELECT nfeProc_NFe_infNFe_det_prod_cProd FROM mvtoSAIDA032023
 where nfeProc_NFe_infNFe_det_prod_cProd not in (SELECT COD_ITEM FROM bd_auditoria_2023.itenssaida);
 
 -- SELECT * FROM bd_auditoria_2023.nfe122023 limit 10;
@@ -23,8 +23,8 @@ where nfeProc_NFe_infNFe_det_prod_cProd not in (SELECT COD_ITEM FROM bd_auditori
 -- where nfeProc_NFe_infNFe_det_prod_CFOP in (5102,5152,5405,5409,5910,5911,5926,5949,6152,6409,6949,5202,5411,6202,6411) group by nfeProc_NFe_infNFe_det_prod_cProd;
 
 SELECT nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_ide_nNF, nfeProc_NFe_infNFe_det_prod_qCom, nfeProc_NFe_infNFe_det_prod_CFOP 
-FROM bd_auditoria_2023.nfe122023
-where nfeProc_NFe_infNFe_det_prod_cProd='352659' and nfeProc_NFe_infNFe_det_prod_CFOP in (5102,5152,5405,5409,5910,5911,5926,5949,6152,6409,6949,5202,5411,6202,6411,6108)
+FROM bd_auditoria_2023.nfe032023
+where nfeProc_NFe_infNFe_det_prod_cProd='407828' and nfeProc_NFe_infNFe_det_prod_CFOP in (5102,5152,5405,5409,5910,5911,5926,5949,6152,6409,6949,5202,5411,6202,6411,6108,5209,6209)
 order by nfeProc_NFe_infNFe_ide_nNF;
 
 SELECT nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_ide_nNF, nfeProc_NFe_infNFe_det_prod_qCom, nfeProc_NFe_infNFe_det_prod_CFOP 
