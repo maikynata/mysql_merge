@@ -7,8 +7,9 @@ CREATE TABLE gtin_vinculado (
     #barra_original_key varchar(28)
 );
 
-ALTER TABLE nfe012024 ADD INDEX (nfeProc_NFe_infNFe_det_prod_cProd);
-ALTER TABLE nfe012024 ADD INDEX (nfeProc_NFe_infNFe_ide_mod);
+ALTER TABLE nfe122024 ADD INDEX (nfeProc_NFe_infNFe_det_prod_cProd);
+ALTER TABLE nfe122024 ADD INDEX (nfeProc_NFe_infNFe_ide_mod);
+
 ALTER TABLE gtin_vinculado ADD INDEX (barra_key);
 
 
@@ -18,23 +19,23 @@ where produto_key=507245;
 SELECT * FROM gtin_vinculado
 where barra_original_key=7899884215906;
 
-SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2024.nfe012024
+SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2024.nfe122024
 where nfeProc_NFe_infNFe_ide_mod='65'
 order by nfeProc_NFe_infNFe_det_prod_cProd;
 
-SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2024.nfe012024
+SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2024.nfe122024
 where nfeProc_NFe_infNFe_ide_mod='65' and nfeProc_NFe_infNFe_det_prod_cProd=nfeProc_NFe_infNFe_det_prod_cEAN;
 
-SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2024.nfe012024
+SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2024.nfe122024
 where nfeProc_NFe_infNFe_det_prod_cProd='273660';
 
--- UPDATE nfe012024
--- SET nfe102024.nfeProc_NFe_infNFe_det_prod_cProd = 273660
--- WHERE nfe102024.nfeProc_NFe_infNFe_det_prod_cProd='7899884215906';
+-- UPDATE nfe122024
+-- SET nfe122024.nfeProc_NFe_infNFe_det_prod_cProd = 273660
+-- WHERE nfe122024.nfeProc_NFe_infNFe_det_prod_cProd='7899884215906';
 
 -- UPDATE nfeProc_NFe_infNFe_det_prod_cProd codigo de barras para cod interno
-UPDATE nfe012024 INNER JOIN gtin_vinculado
-ON nfe012024.nfeProc_NFe_infNFe_det_prod_cProd = gtin_vinculado.barra_key
-SET nfe012024.nfeProc_NFe_infNFe_det_prod_cProd = gtin_vinculado.produto_key
-WHERE nfe012024.nfeProc_NFe_infNFe_ide_mod='65';
+UPDATE nfe122024 INNER JOIN gtin_vinculado
+ON nfe122024.nfeProc_NFe_infNFe_det_prod_cProd = gtin_vinculado.barra_key
+SET nfe122024.nfeProc_NFe_infNFe_det_prod_cProd = gtin_vinculado.produto_key
+WHERE nfe122024.nfeProc_NFe_infNFe_ide_mod='65';
 
