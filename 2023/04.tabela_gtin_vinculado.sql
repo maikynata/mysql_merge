@@ -19,7 +19,7 @@ where produto_key=507245;
 SELECT * FROM gtin_vinculado
 where barra_original_key=7899884215906;
 
-SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2023.nfe122023
+SELECT nfeProc_NFe_infNFe_Id, nfeProc_NFe_infNFe_det_prod_cProd, nfeProc_NFe_infNFe_det_prod_cEAN FROM bd_auditoria_2023.nfe102023
 where nfeProc_NFe_infNFe_ide_mod='65'
 order by nfeProc_NFe_infNFe_det_prod_cProd;
 

@@ -31,7 +31,7 @@ UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.reg_h010
     ON bd_auditoria_2023.auditoria.COD_ITEM = bd_auditoria_2023.reg_h010.COD_ITEM
 SET bd_auditoria_2023.auditoria.reg_h010_QTD = bd_auditoria_2023.reg_h010.QTD;
 
-UPDATE bd_auditoria_2023.auditoria INNER JOIN mvtoEntrada
+UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.mvtoEntrada
     ON bd_auditoria_2023.auditoria.COD_ITEM = bd_auditoria_2023.mvtoEntrada.COD_ITEM
 SET bd_auditoria_2023.auditoria.totalQTDEntrada = bd_auditoria_2023.mvtoEntrada.totalQTDEntrada;
 
@@ -80,8 +80,8 @@ SET bd_auditoria_2023.auditoria.Valor_Unit = bd_auditoria_2023.VL_Zerados_mvtoEn
 
 
 SELECT reg_h010.COD_ITEM, reg_h010_QTD, totalQTDEntrada, TotalQTDnfeSaida, EstoqueFinal, TotalQTDmvtoXML_Entrada, VL_ITEM_IR FROM auditoria
-INNER JOIN bd20230506140610.reg_h010
-ON bd_auditoria_2023.auditoria.COD_ITEM=bd20230506140610.reg_h010.COD_ITEM;
+INNER JOIN sped022023.reg_h010
+ON bd_auditoria_2023.auditoria.COD_ITEM=sped022023.reg_h010.COD_ITEM;
 
 SELECT * from auditoria 
 where EstoqueFinal<>0 and Valor_Unit IS NULL;
