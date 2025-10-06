@@ -74,14 +74,26 @@ SET EstoqueFinal = ((reg_h010_QTD+totalQTDEntrada+TotalQTDmvtoXML_Entrada)-Total
 ALTER TABLE bd_auditoria_2024.auditoria 
 ADD INDEX idx_auditoria_cod_item (COD_ITEM);
 
-UPDATE bd_auditoria_2024.auditoria INNER JOIN bd_auditoria_2024.VL_Zerados_mvtoEntrada
-    ON bd_auditoria_2024.auditoria.COD_ITEM=bd_auditoria_2024.VL_Zerados_mvtoEntrada.COD_ITEM
-SET bd_auditoria_2024.auditoria.Valor_Unit = bd_auditoria_2024.VL_Zerados_mvtoEntrada.VL_UNIT;
+UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.VL_Unit_mvtoEntrada
+    ON bd_auditoria_2023.auditoria.COD_ITEM=bd_auditoria_2023.VL_Unit_mvtoEntrada.COD_ITEM
+SET bd_auditoria_2023.auditoria.Valor_Unit = bd_auditoria_2023.VL_Unit_mvtoEntrada.VL_UNIT;
 
 
 SELECT reg_h010.COD_ITEM, reg_h010_QTD, totalQTDEntrada, TotalQTDnfeSaida, EstoqueFinal, TotalQTDmvtoXML_Entrada, VL_ITEM_IR FROM auditoria
 INNER JOIN bd20240506140610.reg_h010
 ON bd_auditoria_2024.auditoria.COD_ITEM=bd20240506140610.reg_h010.COD_ITEM;
+
+SELECT a.COD_ITEM, r.DESCR_ITEM, r.TIPO_ITEM, r.COD_NCM, r.UNID_INV, 
+       a.reg_h010_QTD, a.totalQTDEntrada, a.TotalQTDnfeSaida, 
+       a.EstoqueFinal, a.TotalQTDmvtoXML_Entrada, a.Valor_Unit
+FROM auditoria a
+INNER JOIN (
+    SELECT COD_ITEM, MIN(DESCR_ITEM) AS DESCR_ITEM, TIPO_ITEM, COD_NCM, UNID_INV
+    FROM reg_0200
+    GROUP BY COD_ITEM
+) r
+ON a.COD_ITEM = r.COD_ITEM;
+
 
 SELECT * from auditoria 
 where EstoqueFinal<>0 and Valor_Unit IS NULL;

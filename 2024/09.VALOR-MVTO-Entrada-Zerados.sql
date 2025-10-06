@@ -17,6 +17,14 @@ WHERE COD_ITEM IN (
 GROUP BY COD_ITEM
 ORDER BY COD_ITEM;
 
+CREATE TABLE VL_Unit_mvtoEntrada AS
+SELECT 
+    COD_ITEM,
+    AVG(VL_ITEM / QTD) AS VL_UNIT
+FROM reg_c170
+GROUP BY COD_ITEM
+ORDER BY COD_ITEM;
+
 ALTER TABLE VL_Zerados_mvtoEntrada ADD INDEX idx_cod_item (COD_ITEM);
 
-select * from VL_Zerados_mvtoEntrada
+select * from VL_Zerados_mvtoEntrada;
