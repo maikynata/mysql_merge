@@ -94,7 +94,20 @@ INNER JOIN (
 ) r
 ON a.COD_ITEM = r.COD_ITEM;
 
+-- Checar se todos os produtos do h010 estão na tabela auditoria:
+SELECT COD_ITEM
+FROM bd_auditoria_2023.reg_h010
+WHERE COD_ITEM NOT IN (
+    SELECT COD_ITEM
+    FROM bd_auditoria_2023.auditoria
+);
 
+SELECT SUM(QTD) AS total_qtd
+FROM bd_auditoria_2023.reg_h010
+WHERE COD_ITEM NOT IN (
+    SELECT COD_ITEM
+    FROM bd_auditoria_2023.auditoria
+);
 
 SELECT * from auditoria 
 where EstoqueFinal<>0 and Valor_Unit IS NULL;

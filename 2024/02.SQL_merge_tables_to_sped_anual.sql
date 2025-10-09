@@ -36,10 +36,10 @@ SELECT * FROM bd20240506140415.reg_h010
 where ID = '1817';
 -- 2055
 
-SELECT * FROM bd_auditoria_2022.reg_h010
+SELECT * FROM bd_auditoria_2024.reg_h010
 where COD_ITEM = '266680';
 
-select * from bd_auditoria_2022.reg_h010 where COD_ITEM = '183520';
+select * from bd_auditoria_2024.reg_h010 where COD_ITEM = '183520';
 
 SELECT * FROM bd20240506140610.reg_h010
 order by COD_ITEM;

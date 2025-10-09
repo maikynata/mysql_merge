@@ -17,7 +17,7 @@ INSERT into auditoria (COD_ITEM) SELECT COD_ITEM from bd_auditoria_2024.itenssai
 
 
 SELECT * from auditoria 
-where COD_ITEM='781651';
+where COD_ITEM='165514';
 
 ALTER TABLE bd_auditoria_2024.auditoria
 ADD COLUMN TotalQTDmvtoXML_Entrada DECIMAL(15.3);
@@ -62,6 +62,15 @@ UPDATE bd_auditoria_2024.auditoria
 SET TotalQTDmvtoXML_Entrada = 0
 where TotalQTDmvtoXML_Entrada is NULL;
 
+UPDATE bd_auditoria_2024.auditoria
+SET TotalQTDnfeSaida = 0
+where TotalQTDnfeSaida is NULL;
+
+UPDATE bd_auditoria_2024.auditoria
+SET EstoqueFinal = 0
+where EstoqueFinal is NULL;
+
+
 SELECT * FROM bd_auditoria_2024.itenssaida;
 
 SELECT * from auditoria
@@ -74,25 +83,60 @@ SET EstoqueFinal = ((reg_h010_QTD+totalQTDEntrada+TotalQTDmvtoXML_Entrada)-Total
 ALTER TABLE bd_auditoria_2024.auditoria 
 ADD INDEX idx_auditoria_cod_item (COD_ITEM);
 
-UPDATE bd_auditoria_2023.auditoria INNER JOIN bd_auditoria_2023.VL_Unit_mvtoEntrada
-    ON bd_auditoria_2023.auditoria.COD_ITEM=bd_auditoria_2023.VL_Unit_mvtoEntrada.COD_ITEM
-SET bd_auditoria_2023.auditoria.Valor_Unit = bd_auditoria_2023.VL_Unit_mvtoEntrada.VL_UNIT;
+UPDATE bd_auditoria_2024.auditoria INNER JOIN bd_auditoria_2024.VL_Unit_mvtoEntrada
+    ON bd_auditoria_2024.auditoria.COD_ITEM=bd_auditoria_2024.VL_Unit_mvtoEntrada.COD_ITEM
+SET bd_auditoria_2024.auditoria.Valor_Unit = bd_auditoria_2024.VL_Unit_mvtoEntrada.VL_UNIT;
+
+UPDATE bd_auditoria_2024.auditoria AS a
+INNER JOIN bd_auditoria_2024.reg_h010 AS r
+    ON a.COD_ITEM = r.COD_ITEM
+SET a.Valor_Unit = r.VL_UNIT
+WHERE a.Valor_Unit IS NULL;
 
 
-SELECT reg_h010.COD_ITEM, reg_h010_QTD, totalQTDEntrada, TotalQTDnfeSaida, EstoqueFinal, TotalQTDmvtoXML_Entrada, VL_ITEM_IR FROM auditoria
-INNER JOIN bd20240506140610.reg_h010
-ON bd_auditoria_2024.auditoria.COD_ITEM=bd20240506140610.reg_h010.COD_ITEM;
 
-SELECT a.COD_ITEM, r.DESCR_ITEM, r.TIPO_ITEM, r.COD_NCM, r.UNID_INV, 
-       a.reg_h010_QTD, a.totalQTDEntrada, a.TotalQTDnfeSaida, 
-       a.EstoqueFinal, a.TotalQTDmvtoXML_Entrada, a.Valor_Unit
-FROM auditoria a
-INNER JOIN (
+-- Gera a planilha auditoria com todos os dados do produto:
+SELECT 
+    a.COD_ITEM,
+    COALESCE(r2024.DESCR_ITEM, r2023.DESCR_ITEM) AS DESCR_ITEM,
+    COALESCE(r2024.TIPO_ITEM, r2023.TIPO_ITEM) AS TIPO_ITEM,
+    COALESCE(r2024.COD_NCM, r2023.COD_NCM) AS COD_NCM,
+    COALESCE(r2024.UNID_INV, r2023.UNID_INV) AS UNID_INV,
+    a.reg_h010_QTD,
+    a.totalQTDEntrada,
+    a.TotalQTDnfeSaida,
+    a.EstoqueFinal,
+    a.TotalQTDmvtoXML_Entrada,
+    a.Valor_Unit
+FROM bd_auditoria_2024.auditoria a
+LEFT JOIN (
     SELECT COD_ITEM, MIN(DESCR_ITEM) AS DESCR_ITEM, TIPO_ITEM, COD_NCM, UNID_INV
-    FROM reg_0200
+    FROM bd_auditoria_2024.reg_0200
     GROUP BY COD_ITEM
-) r
-ON a.COD_ITEM = r.COD_ITEM;
+) r2024
+    ON a.COD_ITEM = r2024.COD_ITEM
+LEFT JOIN (
+    SELECT COD_ITEM, MIN(DESCR_ITEM) AS DESCR_ITEM, TIPO_ITEM, COD_NCM, UNID_INV
+    FROM bd_auditoria_2023.reg_0200
+    GROUP BY COD_ITEM
+) r2023
+    ON a.COD_ITEM = r2023.COD_ITEM;
+
+
+-- Checar se todos os produtos do h010 estão na tabela auditoria:
+SELECT COD_ITEM
+FROM bd_auditoria_2024.reg_h010
+WHERE COD_ITEM NOT IN (
+    SELECT COD_ITEM
+    FROM bd_auditoria_2024.auditoria
+);
+
+SELECT SUM(QTD) AS total_qtd
+FROM bd_auditoria_2024.reg_h010
+WHERE COD_ITEM NOT IN (
+    SELECT COD_ITEM
+    FROM bd_auditoria_2024.auditoria
+);
 
 
 SELECT * from auditoria 
