@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2024 at 09:02 PM
+-- Generation Time: May 17, 2025 at 09:02 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.13
 
@@ -45,18 +45,18 @@ CREATE TABLE `auditoria` (
 CREATE TABLE `itenssaida` (
   `COD_ITEM` varchar(60) COLLATE latin1_general_ci DEFAULT NULL,
   `TotalQTDnfe` decimal(15,0) DEFAULT NULL,
-  `QTDnfe012024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe022024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe032024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe042024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe052024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe062024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe072024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe082024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe092024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe102024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe112024` decimal(15,0) DEFAULT NULL,
-  `QTDnfe122024` decimal(15,0) DEFAULT NULL
+  `QTDnfe012025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe022025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe032025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe042025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe052025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe062025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe072025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe082025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe092025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe102025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe112025` decimal(15,0) DEFAULT NULL,
+  `QTDnfe122025` decimal(15,0) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 -- --------------------------------------------------------
@@ -74,10 +74,10 @@ CREATE TABLE `mvtoentrada` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida012024`
+-- Table structure for table `mvtosaida012025`
 --
 
-CREATE TABLE `mvtosaida012024` (
+CREATE TABLE `mvtosaida012025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -86,10 +86,10 @@ CREATE TABLE `mvtosaida012024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida022024`
+-- Table structure for table `mvtosaida022025`
 --
 
-CREATE TABLE `mvtosaida022024` (
+CREATE TABLE `mvtosaida022025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -98,10 +98,10 @@ CREATE TABLE `mvtosaida022024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida032024`
+-- Table structure for table `mvtosaida032025`
 --
 
-CREATE TABLE `mvtosaida032024` (
+CREATE TABLE `mvtosaida032025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -110,10 +110,10 @@ CREATE TABLE `mvtosaida032024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida042024`
+-- Table structure for table `mvtosaida042025`
 --
 
-CREATE TABLE `mvtosaida042024` (
+CREATE TABLE `mvtosaida042025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -122,10 +122,10 @@ CREATE TABLE `mvtosaida042024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida052024`
+-- Table structure for table `mvtosaida052025`
 --
 
-CREATE TABLE `mvtosaida052024` (
+CREATE TABLE `mvtosaida052025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -134,10 +134,10 @@ CREATE TABLE `mvtosaida052024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida062024`
+-- Table structure for table `mvtosaida062025`
 --
 
-CREATE TABLE `mvtosaida062024` (
+CREATE TABLE `mvtosaida062025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -146,10 +146,10 @@ CREATE TABLE `mvtosaida062024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida072024`
+-- Table structure for table `mvtosaida072025`
 --
 
-CREATE TABLE `mvtosaida072024` (
+CREATE TABLE `mvtosaida072025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -158,10 +158,10 @@ CREATE TABLE `mvtosaida072024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida082024`
+-- Table structure for table `mvtosaida082025`
 --
 
-CREATE TABLE `mvtosaida082024` (
+CREATE TABLE `mvtosaida082025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -170,10 +170,10 @@ CREATE TABLE `mvtosaida082024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida092024`
+-- Table structure for table `mvtosaida092025`
 --
 
-CREATE TABLE `mvtosaida092024` (
+CREATE TABLE `mvtosaida092025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -182,10 +182,10 @@ CREATE TABLE `mvtosaida092024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida102024`
+-- Table structure for table `mvtosaida102025`
 --
 
-CREATE TABLE `mvtosaida102024` (
+CREATE TABLE `mvtosaida102025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -194,10 +194,10 @@ CREATE TABLE `mvtosaida102024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida112024`
+-- Table structure for table `mvtosaida112025`
 --
 
-CREATE TABLE `mvtosaida112024` (
+CREATE TABLE `mvtosaida112025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -206,10 +206,10 @@ CREATE TABLE `mvtosaida112024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mvtosaida122024`
+-- Table structure for table `mvtosaida122025`
 --
 
-CREATE TABLE `mvtosaida122024` (
+CREATE TABLE `mvtosaida122025` (
   `nfeProc_NFe_infNFe_det_prod_cProd` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
   `qtd` decimal(37,3) DEFAULT NULL,
   `nfeProc_NFe_infNFe_det_prod_CFOP` int(11) DEFAULT NULL
@@ -301,10 +301,10 @@ CREATE TABLE `nfce` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe012024`
+-- Table structure for table `nfe012025`
 --
 
-CREATE TABLE `nfe012024` (
+CREATE TABLE `nfe012025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -481,10 +481,10 @@ CREATE TABLE `nfe012024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe022024`
+-- Table structure for table `nfe022025`
 --
 
-CREATE TABLE `nfe022024` (
+CREATE TABLE `nfe022025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -661,10 +661,10 @@ CREATE TABLE `nfe022024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe032024`
+-- Table structure for table `nfe032025`
 --
 
-CREATE TABLE `nfe032024` (
+CREATE TABLE `nfe032025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -841,10 +841,10 @@ CREATE TABLE `nfe032024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe042024`
+-- Table structure for table `nfe042025`
 --
 
-CREATE TABLE `nfe042024` (
+CREATE TABLE `nfe042025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -1021,10 +1021,10 @@ CREATE TABLE `nfe042024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe052024`
+-- Table structure for table `nfe052025`
 --
 
-CREATE TABLE `nfe052024` (
+CREATE TABLE `nfe052025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -1201,10 +1201,10 @@ CREATE TABLE `nfe052024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe062024`
+-- Table structure for table `nfe062025`
 --
 
-CREATE TABLE `nfe062024` (
+CREATE TABLE `nfe062025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -1381,10 +1381,10 @@ CREATE TABLE `nfe062024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe072024`
+-- Table structure for table `nfe072025`
 --
 
-CREATE TABLE `nfe072024` (
+CREATE TABLE `nfe072025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -1561,10 +1561,10 @@ CREATE TABLE `nfe072024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe082024`
+-- Table structure for table `nfe082025`
 --
 
-CREATE TABLE `nfe082024` (
+CREATE TABLE `nfe082025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -1741,10 +1741,10 @@ CREATE TABLE `nfe082024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe092024`
+-- Table structure for table `nfe092025`
 --
 
-CREATE TABLE `nfe092024` (
+CREATE TABLE `nfe092025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -1921,10 +1921,10 @@ CREATE TABLE `nfe092024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe102024`
+-- Table structure for table `nfe102025`
 --
 
-CREATE TABLE `nfe102024` (
+CREATE TABLE `nfe102025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -2101,10 +2101,10 @@ CREATE TABLE `nfe102024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe112024`
+-- Table structure for table `nfe112025`
 --
 
-CREATE TABLE `nfe112024` (
+CREATE TABLE `nfe112025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -2281,10 +2281,10 @@ CREATE TABLE `nfe112024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `nfe122024`
+-- Table structure for table `nfe122025`
 --
 
-CREATE TABLE `nfe122024` (
+CREATE TABLE `nfe122025` (
   `nfeProc` int(11) DEFAULT NULL,
   `nfeProc_versao` decimal(3,2) DEFAULT NULL,
   `nfeProc_xmlns` varchar(34) CHARACTER SET utf8 DEFAULT NULL,
@@ -7476,10 +7476,10 @@ CREATE TABLE `tabelaexternareferenciada` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `unid_cx_102024`
+-- Table structure for table `unid_cx_102025`
 --
 
-CREATE TABLE `unid_cx_102024` (
+CREATE TABLE `unid_cx_102025` (
   `COD_ITEM` varchar(60) COLLATE latin1_general_ci DEFAULT NULL,
   `ID_PAI` bigint(20) NOT NULL,
   `UNID_CONV` varchar(6) COLLATE latin1_general_ci DEFAULT NULL,
@@ -7489,10 +7489,10 @@ CREATE TABLE `unid_cx_102024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `unid_cx_112024`
+-- Table structure for table `unid_cx_112025`
 --
 
-CREATE TABLE `unid_cx_112024` (
+CREATE TABLE `unid_cx_112025` (
   `COD_ITEM` varchar(60) COLLATE latin1_general_ci DEFAULT NULL,
   `ID_PAI` bigint(20) NOT NULL,
   `UNID_CONV` varchar(6) COLLATE latin1_general_ci DEFAULT NULL,
@@ -7502,10 +7502,10 @@ CREATE TABLE `unid_cx_112024` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `unid_cx_122024`
+-- Table structure for table `unid_cx_122025`
 --
 
-CREATE TABLE `unid_cx_122024` (
+CREATE TABLE `unid_cx_122025` (
   `COD_ITEM` varchar(60) COLLATE latin1_general_ci DEFAULT NULL,
   `ID_PAI` bigint(20) NOT NULL,
   `UNID_CONV` varchar(6) COLLATE latin1_general_ci DEFAULT NULL,
@@ -7515,10 +7515,10 @@ CREATE TABLE `unid_cx_122024` (
 -- --------------------------------------------------------
 
 --
--- Stand-in structure for view `xmlsaida2024`
+-- Stand-in structure for view `xmlsaida2025`
 -- (See below for the actual view)
 --
-CREATE TABLE `xmlsaida2024` (
+CREATE TABLE `xmlsaida2025` (
 `nfeProc` int(11)
 ,`nfeProc_versao` decimal(3,2)
 ,`nfeProc_xmlns` varchar(34)
@@ -7695,11 +7695,11 @@ CREATE TABLE `xmlsaida2024` (
 -- --------------------------------------------------------
 
 --
--- Structure for view `xmlsaida2024`
+-- Structure for view `xmlsaida2025`
 --
-DROP TABLE IF EXISTS `xmlsaida2024`;
+DROP TABLE IF EXISTS `xmlsaida2025`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `xmlsaida2024`  AS SELECT `nfe012024`.`nfeProc` AS `nfeProc`, `nfe012024`.`nfeProc_versao` AS `nfeProc_versao`, `nfe012024`.`nfeProc_xmlns` AS `nfeProc_xmlns`, `nfe012024`.`nfeProc_NFe` AS `nfeProc_NFe`, `nfe012024`.`nfeProc_NFe_infNFe` AS `nfeProc_NFe_infNFe`, `nfe012024`.`nfeProc_NFe_infNFe_versao` AS `nfeProc_NFe_infNFe_versao`, `nfe012024`.`nfeProc_NFe_infNFe_Id` AS `nfeProc_NFe_infNFe_Id`, `nfe012024`.`nfeProc_NFe_infNFe_ide` AS `nfeProc_NFe_infNFe_ide`, `nfe012024`.`nfeProc_NFe_infNFe_ide_cUF` AS `nfeProc_NFe_infNFe_ide_cUF`, `nfe012024`.`nfeProc_NFe_infNFe_ide_cNF` AS `nfeProc_NFe_infNFe_ide_cNF`, `nfe012024`.`nfeProc_NFe_infNFe_ide_natOp` AS `nfeProc_NFe_infNFe_ide_natOp`, `nfe012024`.`nfeProc_NFe_infNFe_ide_mod` AS `nfeProc_NFe_infNFe_ide_mod`, `nfe012024`.`nfeProc_NFe_infNFe_ide_serie` AS `nfeProc_NFe_infNFe_ide_serie`, `nfe012024`.`nfeProc_NFe_infNFe_ide_nNF` AS `nfeProc_NFe_infNFe_ide_nNF`, `nfe012024`.`nfeProc_NFe_infNFe_ide_dhEmi` AS `nfeProc_NFe_infNFe_ide_dhEmi`, `nfe012024`.`nfeProc_NFe_infNFe_ide_dhSaiEnt` AS `nfeProc_NFe_infNFe_ide_dhSaiEnt`, `nfe012024`.`nfeProc_NFe_infNFe_ide_tpNF` AS `nfeProc_NFe_infNFe_ide_tpNF`, `nfe012024`.`nfeProc_NFe_infNFe_ide_idDest` AS `nfeProc_NFe_infNFe_ide_idDest`, `nfe012024`.`nfeProc_NFe_infNFe_ide_cMunFG` AS `nfeProc_NFe_infNFe_ide_cMunFG`, `nfe012024`.`nfeProc_NFe_infNFe_ide_tpImp` AS `nfeProc_NFe_infNFe_ide_tpImp`, `nfe012024`.`nfeProc_NFe_infNFe_ide_tpEmis` AS `nfeProc_NFe_infNFe_ide_tpEmis`, `nfe012024`.`nfeProc_NFe_infNFe_ide_cDV` AS `nfeProc_NFe_infNFe_ide_cDV`, `nfe012024`.`nfeProc_NFe_infNFe_ide_tpAmb` AS `nfeProc_NFe_infNFe_ide_tpAmb`, `nfe012024`.`nfeProc_NFe_infNFe_ide_finNFe` AS `nfeProc_NFe_infNFe_ide_finNFe`, `nfe012024`.`nfeProc_NFe_infNFe_ide_indFinal` AS `nfeProc_NFe_infNFe_ide_indFinal`, `nfe012024`.`nfeProc_NFe_infNFe_ide_indPres` AS `nfeProc_NFe_infNFe_ide_indPres`, `nfe012024`.`nfeProc_NFe_infNFe_ide_procEmi` AS `nfeProc_NFe_infNFe_ide_procEmi`, `nfe012024`.`nfeProc_NFe_infNFe_ide_verProc` AS `nfeProc_NFe_infNFe_ide_verProc`, `nfe012024`.`nfeProc_NFe_infNFe_emit` AS `nfeProc_NFe_infNFe_emit`, `nfe012024`.`nfeProc_NFe_infNFe_emit_CNPJ` AS `nfeProc_NFe_infNFe_emit_CNPJ`, `nfe012024`.`nfeProc_NFe_infNFe_emit_xNome` AS `nfeProc_NFe_infNFe_emit_xNome`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit` AS `nfeProc_NFe_infNFe_emit_enderEmit`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_xLgr` AS `nfeProc_NFe_infNFe_emit_enderEmit_xLgr`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_nro` AS `nfeProc_NFe_infNFe_emit_enderEmit_nro`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_xBairro` AS `nfeProc_NFe_infNFe_emit_enderEmit_xBairro`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_cMun` AS `nfeProc_NFe_infNFe_emit_enderEmit_cMun`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_xMun` AS `nfeProc_NFe_infNFe_emit_enderEmit_xMun`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_UF` AS `nfeProc_NFe_infNFe_emit_enderEmit_UF`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_CEP` AS `nfeProc_NFe_infNFe_emit_enderEmit_CEP`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_cPais` AS `nfeProc_NFe_infNFe_emit_enderEmit_cPais`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_xPais` AS `nfeProc_NFe_infNFe_emit_enderEmit_xPais`, `nfe012024`.`nfeProc_NFe_infNFe_emit_enderEmit_fone` AS `nfeProc_NFe_infNFe_emit_enderEmit_fone`, `nfe012024`.`nfeProc_NFe_infNFe_emit_IE` AS `nfeProc_NFe_infNFe_emit_IE`, `nfe012024`.`nfeProc_NFe_infNFe_emit_CRT` AS `nfeProc_NFe_infNFe_emit_CRT`, `nfe012024`.`nfeProc_NFe_infNFe_dest` AS `nfeProc_NFe_infNFe_dest`, `nfe012024`.`nfeProc_NFe_infNFe_dest_CNPJ` AS `nfeProc_NFe_infNFe_dest_CNPJ`, `nfe012024`.`nfeProc_NFe_infNFe_dest_xNome` AS `nfeProc_NFe_infNFe_dest_xNome`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest` AS `nfeProc_NFe_infNFe_dest_enderDest`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_xLgr` AS `nfeProc_NFe_infNFe_dest_enderDest_xLgr`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_nro` AS `nfeProc_NFe_infNFe_dest_enderDest_nro`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_xBairro` AS `nfeProc_NFe_infNFe_dest_enderDest_xBairro`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_cMun` AS `nfeProc_NFe_infNFe_dest_enderDest_cMun`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_xMun` AS `nfeProc_NFe_infNFe_dest_enderDest_xMun`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_UF` AS `nfeProc_NFe_infNFe_dest_enderDest_UF`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_CEP` AS `nfeProc_NFe_infNFe_dest_enderDest_CEP`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_cPais` AS `nfeProc_NFe_infNFe_dest_enderDest_cPais`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_xPais` AS `nfeProc_NFe_infNFe_dest_enderDest_xPais`, `nfe012024`.`nfeProc_NFe_infNFe_dest_enderDest_fone` AS `nfeProc_NFe_infNFe_dest_enderDest_fone`, `nfe012024`.`nfeProc_NFe_infNFe_dest_indIEDest` AS `nfeProc_NFe_infNFe_dest_indIEDest`, `nfe012024`.`nfeProc_NFe_infNFe_dest_IE` AS `nfeProc_NFe_infNFe_dest_IE`, `nfe012024`.`nfeProc_NFe_infNFe_det` AS `nfeProc_NFe_infNFe_det`, `nfe012024`.`nfeProc_NFe_infNFe_det_nItem` AS `nfeProc_NFe_infNFe_det_nItem`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod` AS `nfeProc_NFe_infNFe_det_prod`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_cProd` AS `nfeProc_NFe_infNFe_det_prod_cProd`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_cEAN` AS `nfeProc_NFe_infNFe_det_prod_cEAN`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_xProd` AS `nfeProc_NFe_infNFe_det_prod_xProd`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_NCM` AS `nfeProc_NFe_infNFe_det_prod_NCM`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_CFOP` AS `nfeProc_NFe_infNFe_det_prod_CFOP`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_uCom` AS `nfeProc_NFe_infNFe_det_prod_uCom`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_qCom` AS `nfeProc_NFe_infNFe_det_prod_qCom`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_vUnCom` AS `nfeProc_NFe_infNFe_det_prod_vUnCom`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_vProd` AS `nfeProc_NFe_infNFe_det_prod_vProd`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_cEANTrib` AS `nfeProc_NFe_infNFe_det_prod_cEANTrib`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_uTrib` AS `nfeProc_NFe_infNFe_det_prod_uTrib`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_qTrib` AS `nfeProc_NFe_infNFe_det_prod_qTrib`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_vUnTrib` AS `nfeProc_NFe_infNFe_det_prod_vUnTrib`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_indTot` AS `nfeProc_NFe_infNFe_det_prod_indTot`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto` AS `nfeProc_NFe_infNFe_det_imposto`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_orig` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_orig`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_CST` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_CST`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_modBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_modBC`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pRedBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pRedBC`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vBC`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pICMS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vICMS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_PIS` AS `nfeProc_NFe_infNFe_det_imposto_PIS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_CST` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_CST`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vBC` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vBC`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_pPIS` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_pPIS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vPIS` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vPIS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_COFINS` AS `nfeProc_NFe_infNFe_det_imposto_COFINS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_CST` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_CST`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vBC` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vBC`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_pCOFINS` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_pCOFINS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vCOFINS` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vCOFINS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_orig` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_orig`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_CST` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_CST`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_modBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_modBC`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vBC`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_pICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_pICMS`, `nfe012024`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vICMS`, `nfe012024`.`nfeProc_NFe_infNFe_det_prod_CEST` AS `nfeProc_NFe_infNFe_det_prod_CEST`, `nfe012024`.`nfeProc_NFe_infNFe_total` AS `nfeProc_NFe_infNFe_total`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot` AS `nfeProc_NFe_infNFe_total_ICMSTot`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vBC` AS `nfeProc_NFe_infNFe_total_ICMSTot_vBC`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vICMS` AS `nfeProc_NFe_infNFe_total_ICMSTot_vICMS`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vICMSDeson` AS `nfeProc_NFe_infNFe_total_ICMSTot_vICMSDeson`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vFCP` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFCP`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vBCST` AS `nfeProc_NFe_infNFe_total_ICMSTot_vBCST`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vST` AS `nfeProc_NFe_infNFe_total_ICMSTot_vST`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vFCPST` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFCPST`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vFCPSTRet` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFCPSTRet`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vProd` AS `nfeProc_NFe_infNFe_total_ICMSTot_vProd`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vFrete` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFrete`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vSeg` AS `nfeProc_NFe_infNFe_total_ICMSTot_vSeg`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vDesc` AS `nfeProc_NFe_infNFe_total_ICMSTot_vDesc`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vII` AS `nfeProc_NFe_infNFe_total_ICMSTot_vII`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vIPI` AS `nfeProc_NFe_infNFe_total_ICMSTot_vIPI`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vIPIDevol` AS `nfeProc_NFe_infNFe_total_ICMSTot_vIPIDevol`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vPIS` AS `nfeProc_NFe_infNFe_total_ICMSTot_vPIS`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vCOFINS` AS `nfeProc_NFe_infNFe_total_ICMSTot_vCOFINS`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vOutro` AS `nfeProc_NFe_infNFe_total_ICMSTot_vOutro`, `nfe012024`.`nfeProc_NFe_infNFe_total_ICMSTot_vNF` AS `nfeProc_NFe_infNFe_total_ICMSTot_vNF`, `nfe012024`.`nfeProc_NFe_infNFe_transp` AS `nfeProc_NFe_infNFe_transp`, `nfe012024`.`nfeProc_NFe_infNFe_transp_modFrete` AS `nfeProc_NFe_infNFe_transp_modFrete`, `nfe012024`.`nfeProc_NFe_infNFe_transp_vol` AS `nfeProc_NFe_infNFe_transp_vol`, `nfe012024`.`nfeProc_NFe_infNFe_transp_vol_qVol` AS `nfeProc_NFe_infNFe_transp_vol_qVol`, `nfe012024`.`nfeProc_NFe_infNFe_transp_vol_pesoL` AS `nfeProc_NFe_infNFe_transp_vol_pesoL`, `nfe012024`.`nfeProc_NFe_infNFe_transp_vol_pesoB` AS `nfeProc_NFe_infNFe_transp_vol_pesoB`, `nfe012024`.`nfeProc_NFe_infNFe_pag` AS `nfeProc_NFe_infNFe_pag`, `nfe012024`.`nfeProc_NFe_infNFe_pag_detPag` AS `nfeProc_NFe_infNFe_pag_detPag`, `nfe012024`.`nfeProc_NFe_infNFe_pag_detPag_tPag` AS `nfeProc_NFe_infNFe_pag_detPag_tPag`, `nfe012024`.`nfeProc_NFe_infNFe_pag_detPag_vPag` AS `nfeProc_NFe_infNFe_pag_detPag_vPag`, `nfe012024`.`nfeProc_NFe_infNFe_compra` AS `nfeProc_NFe_infNFe_compra`, `nfe012024`.`nfeProc_NFe_infNFe_compra_xPed` AS `nfeProc_NFe_infNFe_compra_xPed`, `nfe012024`.`nfeProc_NFe_Signature` AS `nfeProc_NFe_Signature`, `nfe012024`.`nfeProc_NFe_Signature_xmlns` AS `nfeProc_NFe_Signature_xmlns`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo` AS `nfeProc_NFe_Signature_SignedInfo`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_CanonicalizationMethod` AS `nfeProc_NFe_Signature_SignedInfo_CanonicalizationMethod`, `nfe012024`.`NFe_Signature_SignedInfo_CanonicalizationMethod_Algorithm` AS `NFe_Signature_SignedInfo_CanonicalizationMethod_Algorithm`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_SignatureMethod` AS `nfeProc_NFe_Signature_SignedInfo_SignatureMethod`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_SignatureMethod_Algorithm` AS `nfeProc_NFe_Signature_SignedInfo_SignatureMethod_Algorithm`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_Reference` AS `nfeProc_NFe_Signature_SignedInfo_Reference`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_Reference_URI` AS `nfeProc_NFe_Signature_SignedInfo_Reference_URI`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_Reference_Transforms` AS `nfeProc_NFe_Signature_SignedInfo_Reference_Transforms`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_Reference_Transforms_Transform` AS `nfeProc_NFe_Signature_SignedInfo_Reference_Transforms_Transform`, `nfe012024`.`Signature_SignedInfo_Reference_Transforms_Transform_Algorithm` AS `Signature_SignedInfo_Reference_Transforms_Transform_Algorithm`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_Reference_DigestMethod` AS `nfeProc_NFe_Signature_SignedInfo_Reference_DigestMethod`, `nfe012024`.`NFe_Signature_SignedInfo_Reference_DigestMethod_Algorithm` AS `NFe_Signature_SignedInfo_Reference_DigestMethod_Algorithm`, `nfe012024`.`nfeProc_NFe_Signature_SignedInfo_Reference_DigestValue` AS `nfeProc_NFe_Signature_SignedInfo_Reference_DigestValue`, `nfe012024`.`nfeProc_NFe_Signature_SignatureValue` AS `nfeProc_NFe_Signature_SignatureValue`, `nfe012024`.`nfeProc_NFe_Signature_KeyInfo` AS `nfeProc_NFe_Signature_KeyInfo`, `nfe012024`.`nfeProc_NFe_Signature_KeyInfo_X509Data` AS `nfeProc_NFe_Signature_KeyInfo_X509Data`, `nfe012024`.`nfeProc_NFe_Signature_KeyInfo_X509Data_X509Certificate` AS `nfeProc_NFe_Signature_KeyInfo_X509Data_X509Certificate`, `nfe012024`.`nfeProc_protNFe` AS `nfeProc_protNFe`, `nfe012024`.`nfeProc_protNFe_versao` AS `nfeProc_protNFe_versao`, `nfe012024`.`nfeProc_protNFe_infProt` AS `nfeProc_protNFe_infProt`, `nfe012024`.`nfeProc_protNFe_infProt_Id` AS `nfeProc_protNFe_infProt_Id`, `nfe012024`.`nfeProc_protNFe_infProt_tpAmb` AS `nfeProc_protNFe_infProt_tpAmb`, `nfe012024`.`nfeProc_protNFe_infProt_verAplic` AS `nfeProc_protNFe_infProt_verAplic`, `nfe012024`.`nfeProc_protNFe_infProt_chNFe` AS `nfeProc_protNFe_infProt_chNFe`, `nfe012024`.`nfeProc_protNFe_infProt_dhRecbto` AS `nfeProc_protNFe_infProt_dhRecbto`, `nfe012024`.`nfeProc_protNFe_infProt_nProt` AS `nfeProc_protNFe_infProt_nProt`, `nfe012024`.`nfeProc_protNFe_infProt_digVal` AS `nfeProc_protNFe_infProt_digVal`, `nfe012024`.`nfeProc_protNFe_infProt_cStat` AS `nfeProc_protNFe_infProt_cStat`, `nfe012024`.`nfeProc_protNFe_infProt_xMotivo` AS `nfeProc_protNFe_infProt_xMotivo` FROM `nfe012024` ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `xmlsaida2025`  AS SELECT `nfe012025`.`nfeProc` AS `nfeProc`, `nfe012025`.`nfeProc_versao` AS `nfeProc_versao`, `nfe012025`.`nfeProc_xmlns` AS `nfeProc_xmlns`, `nfe012025`.`nfeProc_NFe` AS `nfeProc_NFe`, `nfe012025`.`nfeProc_NFe_infNFe` AS `nfeProc_NFe_infNFe`, `nfe012025`.`nfeProc_NFe_infNFe_versao` AS `nfeProc_NFe_infNFe_versao`, `nfe012025`.`nfeProc_NFe_infNFe_Id` AS `nfeProc_NFe_infNFe_Id`, `nfe012025`.`nfeProc_NFe_infNFe_ide` AS `nfeProc_NFe_infNFe_ide`, `nfe012025`.`nfeProc_NFe_infNFe_ide_cUF` AS `nfeProc_NFe_infNFe_ide_cUF`, `nfe012025`.`nfeProc_NFe_infNFe_ide_cNF` AS `nfeProc_NFe_infNFe_ide_cNF`, `nfe012025`.`nfeProc_NFe_infNFe_ide_natOp` AS `nfeProc_NFe_infNFe_ide_natOp`, `nfe012025`.`nfeProc_NFe_infNFe_ide_mod` AS `nfeProc_NFe_infNFe_ide_mod`, `nfe012025`.`nfeProc_NFe_infNFe_ide_serie` AS `nfeProc_NFe_infNFe_ide_serie`, `nfe012025`.`nfeProc_NFe_infNFe_ide_nNF` AS `nfeProc_NFe_infNFe_ide_nNF`, `nfe012025`.`nfeProc_NFe_infNFe_ide_dhEmi` AS `nfeProc_NFe_infNFe_ide_dhEmi`, `nfe012025`.`nfeProc_NFe_infNFe_ide_dhSaiEnt` AS `nfeProc_NFe_infNFe_ide_dhSaiEnt`, `nfe012025`.`nfeProc_NFe_infNFe_ide_tpNF` AS `nfeProc_NFe_infNFe_ide_tpNF`, `nfe012025`.`nfeProc_NFe_infNFe_ide_idDest` AS `nfeProc_NFe_infNFe_ide_idDest`, `nfe012025`.`nfeProc_NFe_infNFe_ide_cMunFG` AS `nfeProc_NFe_infNFe_ide_cMunFG`, `nfe012025`.`nfeProc_NFe_infNFe_ide_tpImp` AS `nfeProc_NFe_infNFe_ide_tpImp`, `nfe012025`.`nfeProc_NFe_infNFe_ide_tpEmis` AS `nfeProc_NFe_infNFe_ide_tpEmis`, `nfe012025`.`nfeProc_NFe_infNFe_ide_cDV` AS `nfeProc_NFe_infNFe_ide_cDV`, `nfe012025`.`nfeProc_NFe_infNFe_ide_tpAmb` AS `nfeProc_NFe_infNFe_ide_tpAmb`, `nfe012025`.`nfeProc_NFe_infNFe_ide_finNFe` AS `nfeProc_NFe_infNFe_ide_finNFe`, `nfe012025`.`nfeProc_NFe_infNFe_ide_indFinal` AS `nfeProc_NFe_infNFe_ide_indFinal`, `nfe012025`.`nfeProc_NFe_infNFe_ide_indPres` AS `nfeProc_NFe_infNFe_ide_indPres`, `nfe012025`.`nfeProc_NFe_infNFe_ide_procEmi` AS `nfeProc_NFe_infNFe_ide_procEmi`, `nfe012025`.`nfeProc_NFe_infNFe_ide_verProc` AS `nfeProc_NFe_infNFe_ide_verProc`, `nfe012025`.`nfeProc_NFe_infNFe_emit` AS `nfeProc_NFe_infNFe_emit`, `nfe012025`.`nfeProc_NFe_infNFe_emit_CNPJ` AS `nfeProc_NFe_infNFe_emit_CNPJ`, `nfe012025`.`nfeProc_NFe_infNFe_emit_xNome` AS `nfeProc_NFe_infNFe_emit_xNome`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit` AS `nfeProc_NFe_infNFe_emit_enderEmit`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_xLgr` AS `nfeProc_NFe_infNFe_emit_enderEmit_xLgr`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_nro` AS `nfeProc_NFe_infNFe_emit_enderEmit_nro`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_xBairro` AS `nfeProc_NFe_infNFe_emit_enderEmit_xBairro`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_cMun` AS `nfeProc_NFe_infNFe_emit_enderEmit_cMun`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_xMun` AS `nfeProc_NFe_infNFe_emit_enderEmit_xMun`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_UF` AS `nfeProc_NFe_infNFe_emit_enderEmit_UF`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_CEP` AS `nfeProc_NFe_infNFe_emit_enderEmit_CEP`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_cPais` AS `nfeProc_NFe_infNFe_emit_enderEmit_cPais`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_xPais` AS `nfeProc_NFe_infNFe_emit_enderEmit_xPais`, `nfe012025`.`nfeProc_NFe_infNFe_emit_enderEmit_fone` AS `nfeProc_NFe_infNFe_emit_enderEmit_fone`, `nfe012025`.`nfeProc_NFe_infNFe_emit_IE` AS `nfeProc_NFe_infNFe_emit_IE`, `nfe012025`.`nfeProc_NFe_infNFe_emit_CRT` AS `nfeProc_NFe_infNFe_emit_CRT`, `nfe012025`.`nfeProc_NFe_infNFe_dest` AS `nfeProc_NFe_infNFe_dest`, `nfe012025`.`nfeProc_NFe_infNFe_dest_CNPJ` AS `nfeProc_NFe_infNFe_dest_CNPJ`, `nfe012025`.`nfeProc_NFe_infNFe_dest_xNome` AS `nfeProc_NFe_infNFe_dest_xNome`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest` AS `nfeProc_NFe_infNFe_dest_enderDest`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_xLgr` AS `nfeProc_NFe_infNFe_dest_enderDest_xLgr`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_nro` AS `nfeProc_NFe_infNFe_dest_enderDest_nro`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_xBairro` AS `nfeProc_NFe_infNFe_dest_enderDest_xBairro`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_cMun` AS `nfeProc_NFe_infNFe_dest_enderDest_cMun`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_xMun` AS `nfeProc_NFe_infNFe_dest_enderDest_xMun`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_UF` AS `nfeProc_NFe_infNFe_dest_enderDest_UF`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_CEP` AS `nfeProc_NFe_infNFe_dest_enderDest_CEP`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_cPais` AS `nfeProc_NFe_infNFe_dest_enderDest_cPais`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_xPais` AS `nfeProc_NFe_infNFe_dest_enderDest_xPais`, `nfe012025`.`nfeProc_NFe_infNFe_dest_enderDest_fone` AS `nfeProc_NFe_infNFe_dest_enderDest_fone`, `nfe012025`.`nfeProc_NFe_infNFe_dest_indIEDest` AS `nfeProc_NFe_infNFe_dest_indIEDest`, `nfe012025`.`nfeProc_NFe_infNFe_dest_IE` AS `nfeProc_NFe_infNFe_dest_IE`, `nfe012025`.`nfeProc_NFe_infNFe_det` AS `nfeProc_NFe_infNFe_det`, `nfe012025`.`nfeProc_NFe_infNFe_det_nItem` AS `nfeProc_NFe_infNFe_det_nItem`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod` AS `nfeProc_NFe_infNFe_det_prod`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_cProd` AS `nfeProc_NFe_infNFe_det_prod_cProd`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_cEAN` AS `nfeProc_NFe_infNFe_det_prod_cEAN`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_xProd` AS `nfeProc_NFe_infNFe_det_prod_xProd`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_NCM` AS `nfeProc_NFe_infNFe_det_prod_NCM`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_CFOP` AS `nfeProc_NFe_infNFe_det_prod_CFOP`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_uCom` AS `nfeProc_NFe_infNFe_det_prod_uCom`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_qCom` AS `nfeProc_NFe_infNFe_det_prod_qCom`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_vUnCom` AS `nfeProc_NFe_infNFe_det_prod_vUnCom`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_vProd` AS `nfeProc_NFe_infNFe_det_prod_vProd`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_cEANTrib` AS `nfeProc_NFe_infNFe_det_prod_cEANTrib`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_uTrib` AS `nfeProc_NFe_infNFe_det_prod_uTrib`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_qTrib` AS `nfeProc_NFe_infNFe_det_prod_qTrib`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_vUnTrib` AS `nfeProc_NFe_infNFe_det_prod_vUnTrib`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_indTot` AS `nfeProc_NFe_infNFe_det_prod_indTot`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto` AS `nfeProc_NFe_infNFe_det_imposto`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_orig` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_orig`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_CST` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_CST`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_modBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_modBC`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pRedBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pRedBC`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vBC`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_pICMS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS20_vICMS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_PIS` AS `nfeProc_NFe_infNFe_det_imposto_PIS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_CST` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_CST`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vBC` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vBC`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_pPIS` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_pPIS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vPIS` AS `nfeProc_NFe_infNFe_det_imposto_PIS_PISOutr_vPIS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_COFINS` AS `nfeProc_NFe_infNFe_det_imposto_COFINS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_CST` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_CST`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vBC` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vBC`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_pCOFINS` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_pCOFINS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vCOFINS` AS `nfeProc_NFe_infNFe_det_imposto_COFINS_COFINSOutr_vCOFINS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_orig` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_orig`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_CST` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_CST`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_modBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_modBC`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vBC` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vBC`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_pICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_pICMS`, `nfe012025`.`nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vICMS` AS `nfeProc_NFe_infNFe_det_imposto_ICMS_ICMS00_vICMS`, `nfe012025`.`nfeProc_NFe_infNFe_det_prod_CEST` AS `nfeProc_NFe_infNFe_det_prod_CEST`, `nfe012025`.`nfeProc_NFe_infNFe_total` AS `nfeProc_NFe_infNFe_total`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot` AS `nfeProc_NFe_infNFe_total_ICMSTot`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vBC` AS `nfeProc_NFe_infNFe_total_ICMSTot_vBC`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vICMS` AS `nfeProc_NFe_infNFe_total_ICMSTot_vICMS`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vICMSDeson` AS `nfeProc_NFe_infNFe_total_ICMSTot_vICMSDeson`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vFCP` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFCP`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vBCST` AS `nfeProc_NFe_infNFe_total_ICMSTot_vBCST`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vST` AS `nfeProc_NFe_infNFe_total_ICMSTot_vST`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vFCPST` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFCPST`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vFCPSTRet` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFCPSTRet`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vProd` AS `nfeProc_NFe_infNFe_total_ICMSTot_vProd`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vFrete` AS `nfeProc_NFe_infNFe_total_ICMSTot_vFrete`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vSeg` AS `nfeProc_NFe_infNFe_total_ICMSTot_vSeg`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vDesc` AS `nfeProc_NFe_infNFe_total_ICMSTot_vDesc`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vII` AS `nfeProc_NFe_infNFe_total_ICMSTot_vII`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vIPI` AS `nfeProc_NFe_infNFe_total_ICMSTot_vIPI`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vIPIDevol` AS `nfeProc_NFe_infNFe_total_ICMSTot_vIPIDevol`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vPIS` AS `nfeProc_NFe_infNFe_total_ICMSTot_vPIS`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vCOFINS` AS `nfeProc_NFe_infNFe_total_ICMSTot_vCOFINS`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vOutro` AS `nfeProc_NFe_infNFe_total_ICMSTot_vOutro`, `nfe012025`.`nfeProc_NFe_infNFe_total_ICMSTot_vNF` AS `nfeProc_NFe_infNFe_total_ICMSTot_vNF`, `nfe012025`.`nfeProc_NFe_infNFe_transp` AS `nfeProc_NFe_infNFe_transp`, `nfe012025`.`nfeProc_NFe_infNFe_transp_modFrete` AS `nfeProc_NFe_infNFe_transp_modFrete`, `nfe012025`.`nfeProc_NFe_infNFe_transp_vol` AS `nfeProc_NFe_infNFe_transp_vol`, `nfe012025`.`nfeProc_NFe_infNFe_transp_vol_qVol` AS `nfeProc_NFe_infNFe_transp_vol_qVol`, `nfe012025`.`nfeProc_NFe_infNFe_transp_vol_pesoL` AS `nfeProc_NFe_infNFe_transp_vol_pesoL`, `nfe012025`.`nfeProc_NFe_infNFe_transp_vol_pesoB` AS `nfeProc_NFe_infNFe_transp_vol_pesoB`, `nfe012025`.`nfeProc_NFe_infNFe_pag` AS `nfeProc_NFe_infNFe_pag`, `nfe012025`.`nfeProc_NFe_infNFe_pag_detPag` AS `nfeProc_NFe_infNFe_pag_detPag`, `nfe012025`.`nfeProc_NFe_infNFe_pag_detPag_tPag` AS `nfeProc_NFe_infNFe_pag_detPag_tPag`, `nfe012025`.`nfeProc_NFe_infNFe_pag_detPag_vPag` AS `nfeProc_NFe_infNFe_pag_detPag_vPag`, `nfe012025`.`nfeProc_NFe_infNFe_compra` AS `nfeProc_NFe_infNFe_compra`, `nfe012025`.`nfeProc_NFe_infNFe_compra_xPed` AS `nfeProc_NFe_infNFe_compra_xPed`, `nfe012025`.`nfeProc_NFe_Signature` AS `nfeProc_NFe_Signature`, `nfe012025`.`nfeProc_NFe_Signature_xmlns` AS `nfeProc_NFe_Signature_xmlns`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo` AS `nfeProc_NFe_Signature_SignedInfo`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_CanonicalizationMethod` AS `nfeProc_NFe_Signature_SignedInfo_CanonicalizationMethod`, `nfe012025`.`NFe_Signature_SignedInfo_CanonicalizationMethod_Algorithm` AS `NFe_Signature_SignedInfo_CanonicalizationMethod_Algorithm`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_SignatureMethod` AS `nfeProc_NFe_Signature_SignedInfo_SignatureMethod`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_SignatureMethod_Algorithm` AS `nfeProc_NFe_Signature_SignedInfo_SignatureMethod_Algorithm`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_Reference` AS `nfeProc_NFe_Signature_SignedInfo_Reference`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_Reference_URI` AS `nfeProc_NFe_Signature_SignedInfo_Reference_URI`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_Reference_Transforms` AS `nfeProc_NFe_Signature_SignedInfo_Reference_Transforms`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_Reference_Transforms_Transform` AS `nfeProc_NFe_Signature_SignedInfo_Reference_Transforms_Transform`, `nfe012025`.`Signature_SignedInfo_Reference_Transforms_Transform_Algorithm` AS `Signature_SignedInfo_Reference_Transforms_Transform_Algorithm`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_Reference_DigestMethod` AS `nfeProc_NFe_Signature_SignedInfo_Reference_DigestMethod`, `nfe012025`.`NFe_Signature_SignedInfo_Reference_DigestMethod_Algorithm` AS `NFe_Signature_SignedInfo_Reference_DigestMethod_Algorithm`, `nfe012025`.`nfeProc_NFe_Signature_SignedInfo_Reference_DigestValue` AS `nfeProc_NFe_Signature_SignedInfo_Reference_DigestValue`, `nfe012025`.`nfeProc_NFe_Signature_SignatureValue` AS `nfeProc_NFe_Signature_SignatureValue`, `nfe012025`.`nfeProc_NFe_Signature_KeyInfo` AS `nfeProc_NFe_Signature_KeyInfo`, `nfe012025`.`nfeProc_NFe_Signature_KeyInfo_X509Data` AS `nfeProc_NFe_Signature_KeyInfo_X509Data`, `nfe012025`.`nfeProc_NFe_Signature_KeyInfo_X509Data_X509Certificate` AS `nfeProc_NFe_Signature_KeyInfo_X509Data_X509Certificate`, `nfe012025`.`nfeProc_protNFe` AS `nfeProc_protNFe`, `nfe012025`.`nfeProc_protNFe_versao` AS `nfeProc_protNFe_versao`, `nfe012025`.`nfeProc_protNFe_infProt` AS `nfeProc_protNFe_infProt`, `nfe012025`.`nfeProc_protNFe_infProt_Id` AS `nfeProc_protNFe_infProt_Id`, `nfe012025`.`nfeProc_protNFe_infProt_tpAmb` AS `nfeProc_protNFe_infProt_tpAmb`, `nfe012025`.`nfeProc_protNFe_infProt_verAplic` AS `nfeProc_protNFe_infProt_verAplic`, `nfe012025`.`nfeProc_protNFe_infProt_chNFe` AS `nfeProc_protNFe_infProt_chNFe`, `nfe012025`.`nfeProc_protNFe_infProt_dhRecbto` AS `nfeProc_protNFe_infProt_dhRecbto`, `nfe012025`.`nfeProc_protNFe_infProt_nProt` AS `nfeProc_protNFe_infProt_nProt`, `nfe012025`.`nfeProc_protNFe_infProt_digVal` AS `nfeProc_protNFe_infProt_digVal`, `nfe012025`.`nfeProc_protNFe_infProt_cStat` AS `nfeProc_protNFe_infProt_cStat`, `nfe012025`.`nfeProc_protNFe_infProt_xMotivo` AS `nfeProc_protNFe_infProt_xMotivo` FROM `nfe012025` ;
 
 --
 -- Indexes for dumped tables
